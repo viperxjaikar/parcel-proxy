@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Order History</title>
+    <link rel="stylesheet" href="book_order.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Preview_enhanced.png" alt="Safe Pick Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="right-section">
+            <!-- Updated Form (Submit Emails) -->
+            <div class="form-box">
+                <h2>Submit Emails</h2>
+                <form action="submit_emails.php" method="POST">
+                    <div class="input-box">
+                        <label for="email1">Email 1</label>
+                        <input type="email" id="email1" name="email1" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email2">Email 2</label>
+                        <input type="email" id="email2" name="email2">
+                    </div>
+                    <div class="input-box">
+                        <label for="email3">Email 3</label>
+                        <input type="email" id="email3" name="email3">
+                    </div>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

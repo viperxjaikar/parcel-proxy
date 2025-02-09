@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(63, 57, 57);
+    color: #f4a261;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(63, 57, 57);
+}
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(214, 205, 205);
+    font-size: 1.2em;
+}
+.logo {
+    text-align: left;
+}
+
+.logo img {
+    width: 60px;
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(214, 205, 205);
+    font-size: 1.2em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: rgb(68, 58, 58);
+    margin-bottom: 10px;
+}
+
+.right-section {
+    width: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f7a882;
+    border-radius: 10px;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: #f7a882;
+    margin-bottom: 30px; /* Added margin-bottom for spacing below the form */
+    border-radius: 10px;
+    
+}   
+
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    color: black;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: black;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #333333;
+}
+
+footer {
+    /* background-color: rgb(247, 168, 130); */
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10px;
+}
+
+footer p {
+    font-size: 1em;
+    color: #2E2B2B;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #2E2B2B;
+    font-size: 1.5em;
+    margin: 0 10px;
+    text-decoration: none;
+}
