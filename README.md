@@ -43,7 +43,49 @@ Edit
 module.exports = {
   "/api": {
     target: "http://localhost:5000",
-    changeOrigin: true,
+    changeOrigin: true,# 📦 Parcel Proxy
+
+A lightweight proxy server project using Node.js and Parcel for fast static asset delivery and local development.
+
+---
+
+## 🚀 Features
+
+* ⚡ Simple HTTP proxy server setup
+* 🔄 Automatic asset bundling with Parcel
+* 🗂️ Serves static files efficiently
+* 🔌 Easy configuration for local or staging use
+
+---
+
+## 📦 Tech Stack
+
+* **Backend**: Node.js, Express.js
+* **Bundler**: Parcel
+* **Other**: HTTP Proxy Middleware
+
+---
+
+## 🧪 How to Run Locally
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/viperxjaikar/parcel-proxy.git
+cd parcel-proxy
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the proxy server
+npm run start
+```
+
+---
+
+## 📄 License
+
+MIT License
+
     secure: false
   },
   "/auth": {
