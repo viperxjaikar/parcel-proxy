@@ -1,33 +1,32 @@
-# 🛡️ Phishing URL Detector AI
+# 📦 Parcel Proxy
 
-An AI-powered phishing URL detection tool that combines machine learning with real-time security checks to protect users from malicious websites.
+A fast, lightweight proxy server for Parcel-based web projects. This tool helps you develop and test Parcel apps with custom proxy rules, API routing, and local server configuration.
 
 ## 🚀 Features
-- ⚡ ML model trained on phishing & legitimate URLs  
-- 🔒 Real-time Google Safe Browsing API integration  
-- 📊 Logs all predictions with user feedback  
-- 🌓 Beautiful responsive web UI with dark mode  
-- 🚨 Instant predictions with feedback options  
+⚡ Blazing fast proxy for Parcel bundler  
+🔀 Customizable proxy routes for API calls  
+🌐 Seamless local development with CORS handling  
+🛠️ Easy to configure and extend  
+🔒 Optional HTTPS support for secure local dev  
 
 ## 🛠️ Tech Stack
-- **Frontend**: HTML, CSS (custom styling, dark UI)  
-- **Backend**: Python, Flask  
-- **AI/ML**: scikit-learn, pandas, tldextract  
-- **Security**: Google Safe Browsing API  
-- **Logging**: CSV file with all user feedback  
+**Bundler**: Parcel  
+**Server**: Node.js, Express  
+**Config**: JSON/YAML or JS-based config  
+**Proxy**: http-proxy-middleware  
 
-## � How to Run Locally
+## 🧪 How to Run Locally
 
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/yourusername/phishing-url-detector.git
-cd phishing-url-detector
+git clone https://github.com/viperxjaikar/parcel-proxy.git
+cd parcel-proxy
 
 # 2️⃣ Install dependencies
-pip install -r requirements.txt
+npm install
 
-# 3️⃣ Configure API keys
-→ Edit config.py with your Google Safe Browsing API key
+# 3️⃣ Configure your proxy rules
+→ Edit proxy.config.js (or .json) as needed
 
-# 4️⃣ Start the Flask server
-python app.py
+# 4️⃣ Start the proxy server
+npm run start
