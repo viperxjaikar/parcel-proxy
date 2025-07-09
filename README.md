@@ -1,100 +1,33 @@
-📦 Parcel Proxy
-A fast, lightweight proxy server for Parcel-based web projects.
-This tool helps you develop and test Parcel apps with custom proxy rules, API routing, and local server configuration.
+# 🛡️ Phishing URL Detector AI
 
-🚀 Features
-⚡ Blazing fast proxy for Parcel bundler
-
-🔀 Customizable proxy routes for API calls
-
-🌐 Seamless local development with CORS handling
-
-🛠️ Easy to configure and extend
-
-🔒 Optional HTTPS support for secure local dev
-
-📦 Tech Stack
-Bundler: Parcel
-Server: Node.js, Express (or native HTTP if you wrote your own)
-Config: JSON/YAML or JS-based config
-Proxy: http-proxy-middleware (or your custom logic)
-
-🧪 How to Run Locally
-bash
-Copy
-Edit
-# 1️⃣ Clone the repository
-git clone https://github.com/viperxjaikar/parcel-proxy.git
-cd parcel-proxy
-
-# 2️⃣ Install dependencies
-npm install
-
-# 3️⃣ Configure your proxy rules
-# → Edit proxy.config.js (or .json) as needed
-
-# 4️⃣ Start the proxy server
-npm run start
-⚙️ Example Proxy Rule
-js
-Copy
-Edit
-// proxy.config.js
-module.exports = {
-  "/api": {
-    target: "http://localhost:5000",
-    changeOrigin: true,# 📦 Parcel Proxy
-
-A lightweight proxy server project using Node.js and Parcel for fast static asset delivery and local development.
-
----
+An AI-powered phishing URL detection tool that combines machine learning with real-time security checks to protect users from malicious websites.
 
 ## 🚀 Features
+- ⚡ ML model trained on phishing & legitimate URLs  
+- 🔒 Real-time Google Safe Browsing API integration  
+- 📊 Logs all predictions with user feedback  
+- 🌓 Beautiful responsive web UI with dark mode  
+- 🚨 Instant predictions with feedback options  
 
-* ⚡ Simple HTTP proxy server setup
-* 🔄 Automatic asset bundling with Parcel
-* 🗂️ Serves static files efficiently
-* 🔌 Easy configuration for local or staging use
+## 🛠️ Tech Stack
+- **Frontend**: HTML, CSS (custom styling, dark UI)  
+- **Backend**: Python, Flask  
+- **AI/ML**: scikit-learn, pandas, tldextract  
+- **Security**: Google Safe Browsing API  
+- **Logging**: CSV file with all user feedback  
 
----
-
-## 📦 Tech Stack
-
-* **Backend**: Node.js, Express.js
-* **Bundler**: Parcel
-* **Other**: HTTP Proxy Middleware
-
----
-
-## 🧪 How to Run Locally
+## � How to Run Locally
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/viperxjaikar/parcel-proxy.git
-cd parcel-proxy
+# 1️⃣ Clone the repository
+git clone https://github.com/yourusername/phishing-url-detector.git
+cd phishing-url-detector
 
-# 2. Install dependencies
-npm install
+# 2️⃣ Install dependencies
+pip install -r requirements.txt
 
-# 3. Start the proxy server
-npm run start
-```
+# 3️⃣ Configure API keys
+→ Edit config.py with your Google Safe Browsing API key
 
----
-
-## 📄 License
-
-MIT License
-
-    secure: false
-  },
-  "/auth": {
-    target: "http://localhost:4000",
-    pathRewrite: { "^/auth": "" }
-  }
-};
-✅ About
-Parcel Proxy helps developers route API requests during local development without dealing with CORS or server reconfiguration.
-
-📜 License
-MIT — free to use and modify.
+# 4️⃣ Start the Flask server
+python app.py
